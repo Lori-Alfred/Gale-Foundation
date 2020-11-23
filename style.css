@@ -1,0 +1,1392 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0  ; 
+    margin: 0 ;
+    box-sizing: border-box;
+}
+:root{
+    --donationRed:rgba(215,7,7,1);
+    --defaultWhite:rgba(255,255,255,1);
+    --defaultGreen:rgba(41,115,115,1);
+    --defaultBlack:rgba(0,0,0,1);
+    --emailgreenForm:rgba(100,157,157,1);
+    --defaultYellow:rgba(233,215,88,1);
+    --footerColor:rgba(57,57,58,1);
+    --defaultOrange:rgba(255,133,82,1);
+    --orangeColor1:rgba(251,118,63,1);
+    --commentGreen:rgba(159,223,223,1);
+    --commentYellow:rgba(254,237,121,0.7);
+    --defaultGrey: rgba(73, 80, 87, 1);
+
+}
+body,html {
+    overflow-x: hidden;
+    }
+
+body{
+    font-family:'Roboto', sans-serif; 
+    line-height: 1.6;
+    color: var(--defaultBlack);
+}
+.container-fluid{
+    max-width: 100% ;
+    padding: 0;
+}
+/* BEGINNING OF NAVIGATION  */
+
+ .gNavigation ul li {
+    
+    list-style-type: none;
+    color: var(--defaultBlack);
+
+}
+ .gNavigation ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--defaultBlack);
+    padding: 10px;
+
+}
+ .gNavigation ul li a:hover{
+  color: var(--defaultYellow);
+
+}
+
+.menuOptions{
+    display: flex;
+    flex: 1, 1, 0;
+    align-items: center;
+    padding: 0 10px;
+    
+    
+}
+
+.hamburger{
+    margin-top:1rem;
+   
+}
+
+.donation{
+    background-color: var(--donationRed);
+    border: 1px solid var(--donationRed);
+    border-radius: 40px ;
+
+}
+.donation>a{
+    color: var(--defaultWhite) !important;
+}
+.donation>a:hover{
+    color: var(--defaultBlack) !important;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+}
+.gNavigation{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px 10px;
+    background-color: var(--defaultWhite);
+}
+
+/* 
+ ENDING OF NAVIGATION  */
+
+ /* BEGINNING OF CAROUSEL */
+ .hpage{
+     display: flex;
+     flex-direction:column;
+     position: relative;
+     width: 100%;
+     height: 90vh;
+     top: 0;
+     left: 0;
+     background: url(images/carousel3.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     z-index: 1;
+
+ }
+ .hpage::after{
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: var(--defaultBlack);
+     opacity: 0.4;
+     z-index: 2;
+
+ }
+ 
+ .hpage  {
+     color: var(--defaultWhite)
+
+ }
+ .hpage h1 {
+     position: relative;
+     z-index: 4;
+     
+     color: var(--defaultWhite);
+     align-items:flex-start;
+     justify-content: center;
+     padding-left:1rem;
+     margin-top: 8rem;
+
+ }
+ .hpage div a{
+     display: inline-block;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: white;
+    border: 1px solid var(--defaultOrange);
+    background-color: var(--defaultOrange);
+    border-radius: 40px;
+ }
+ .hpage div a:hover{
+    color:rgb(79, 228, 208);
+ }
+ .cc{
+     z-index: 4;
+     padding-left: 1rem;
+ }
+ 
+ 
+ .hpage1{
+     display: flex;
+     flex-direction:column;
+     position: relative;
+     width: 100%;
+     height: 90vh;
+     top: 0;
+     left: 0;
+     background: url(images/carousel2.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     z-index: 1;
+
+ }
+ .hpage1::after{
+     content: "";
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: var(--defaultBlack);
+     opacity: 0.4;
+     z-index: 2;
+
+ }
+ 
+ .hpage1  {
+     color: var(--defaultWhite)
+
+ }
+ .hpage1 h1 {
+     position: relative;
+     z-index: 4;
+     
+     color: var(--defaultWhite);
+     align-items:flex-start;
+     justify-content: center;
+     padding-left:1rem;
+     margin-top: 10rem;
+
+ }
+ .hpage1 div a{
+     display: inline-block;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: white;
+    border: 1px solid var(--defaultOrange);
+    background-color: var(--defaultOrange);
+    border-radius: 40px;
+ }
+ .hpage1 div a:hover{
+    color:rgb(79, 228, 208);
+ }
+ .ccc{
+     z-index: 4;
+     padding-left: 1rem;
+ }
+ 
+ 
+
+
+ /* ENDING OF CAROUSEL */
+
+ /* MISSION STATEMENT */
+.mission{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left:1rem ;
+    padding-right: 5rem;
+    color: var(--defaultWhite);
+    background-color: var(--defaultBlack);
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+.child h1{
+    font-size: 3rem;
+}
+.ourMission h1{
+    font-size: 3rem;
+
+
+}
+.ourMission p{
+    font-size: 1rem;
+
+
+}
+
+
+ /* END OF  MISSION STATEMENT */
+
+ /* BEGINNING OF CAUSES */
+.causes h2{
+    text-align: center;
+    font-size: 1.5rem;
+   
+}
+.causes h3{
+    text-align: center;
+    color: var(--defaultGreen);
+}
+.causesCategories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    overflow: hidden;
+
+}
+.causesCategories div{
+    border: 2px solid var(--defaultGreen);
+    height: 70vh;
+}
+.causesCategories div h3{
+    text-align: center;
+    padding-top: 3rem;
+    color: var(--defaultGreen);
+}
+.causesCategories div p {
+    text-align: center;
+    padding-top: 1rem;
+}
+.causesCategories div button  {
+  margin-left: 30%;
+  margin-top: 1rem;
+
+  padding:10px 40px;
+}
+ .causes hr{
+display: inline-block;
+    border:0;
+    border-top:1px solid var(--defaultGreen);
+    width: 60px;
+
+}
+.learn_more a{
+    color: var(--defaultBlack);
+    text-decoration: none;
+}
+
+
+ /* END OF CAUSES */
+
+ /* EMAIL SUBSCRIPTION */
+.stayConnected {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+color: var(--defaultWhite);
+background-color: var(--defaultGreen);
+padding-top: 3rem;
+padding-bottom: 3rem;
+width: 100%;
+
+}
+.stayConnected h3{
+font-size: 2rem;
+}
+.subscribe input[type="email"]{
+    /* padding: 20px 200px; */
+    padding: 1.5rem 10rem ;
+    background-color:var(--emailgreenForm);
+    outline: none;
+    border: 1px solid var(--emailgreenForm);
+  
+}
+.subscribe input[type="email"]::placeholder{
+    color: var(--defaultWhite);
+    font-size:1rem;
+}
+.subscribe button{
+    padding: 1.5rem 3rem;
+    
+  
+}
+.subscribe button{
+    font-size: 1rem;
+    
+  
+}
+ /* END OF EMAIL SUBSCRIPTION */
+/* REPORTS  */
+.report>h3{
+    text-align: center;
+    color: var(--defaultGreen);
+    padding-top:3rem;
+}
+.report hr{
+    display: inline-block;
+    border:0;
+    border-top:1px solid var(--defaultGreen);
+    width: 60px;
+
+}
+.reports{
+    display:flex ;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    
+}
+.report1 button{
+    background-color: var(--defaultYellow);
+    border: 1px solid var(--defaultGreen);
+
+}
+.report1 button:hover{
+    background-color: var(--defaultGreen);
+ 
+
+}
+.report1 button a{
+   text-decoration: none;
+   color: var(--defaultBlack);
+}
+.reports .report1{
+    text-align: center;
+    margin-top: 15rem;
+    margin-bottom:15rem ;
+}
+.reports button {
+
+    padding: 10px 80px;
+}
+.report2 p{
+    padding-top: 1.5rem;
+    text-align:justify;
+
+}
+.report2 img{
+    /* overflow: hidden; */
+    
+}
+.reportname{
+    color: var(--defaultGreen);
+}
+/* END OF REPORTS  */
+
+
+/* TEAM HTML */
+.heropage2{
+    display: flex;
+    flex-direction: column;
+   background-image: url(images/team.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+    height: 50vh;
+    width: 100%;
+    color: var(--defaultWhite);
+    justify-content:flex-end;
+    align-items:center;
+    
+}
+.heropage2{
+    padding-bottom: 1rem;
+}
+.meet{
+    
+    background-color: var(--defaultWhite);
+    
+    
+}
+.meet h3{
+    text-align: center;
+    color: var(--defaultGreen);
+}
+.meet hr{
+    display: inline-block;
+    border:0;
+    border-top:1px solid var(--defaultGreen);
+    width: 60px;  
+    
+}
+.meet img{
+    width: 70%;
+    border-radius: 50%;
+}
+.meet p{
+    font-size: 0.7rem;
+    padding-bottom: 2rem;
+}
+.names{
+    display: flex;
+    flex-wrap: wrap;
+justify-content:space-around;
+padding-left: 2rem;
+padding-top: 10rem;
+padding-bottom: 10rem;
+
+}
+.names div{
+    text-align: center;
+}
+.names h4{
+    color: var(--defaultGreen);
+    padding-top: 1rem;
+}
+
+
+
+
+.inspiration{
+    display:flex;
+    flex-wrap:wrap-reverse ;
+    background-color: var(--defaultBlack);
+    color: var(--defaultWhite);
+  
+   justify-content: space-between;
+    
+    
+}
+
+.inspiration .image img{
+    object-fit:cover;
+     width: 100%;
+    height:100%;
+    
+
+}
+.inspiration .quote{
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+    padding-left: 3rem;
+    margin-top: 4rem;
+
+}
+.inspiration .quote h1{
+    font-size: 3rem;
+}
+.inspiration .quote h3{
+  font-weight: 300;
+}
+.inspiration .quote p{
+  color:rgba(36, 222, 222, 1);
+  margin-top: 1rem;
+  
+}
+.inspiration .quote button{
+  margin-top: 4rem;
+  padding:1.5rem 5rem;
+  background-color:var(--defaultOrange);
+  border: 1px solid var(--defaultOrange);
+  outline: 0;
+  border-radius: 40px;
+  
+}
+
+.inspiration .quote button{
+  margin-top: 4rem;
+  padding:1rem 3rem;
+  background-color:var(--defaultOrange);
+  border: 1px solid var(--defaultOrange);
+  outline: 0;
+  border-radius: 40px;
+  
+}
+.inspiration .quote button:hover{
+ background-color:rgb(236, 150, 70);
+}
+.inspiration .quote button a{
+ color: var(--defaultBlack);
+ font-size: 2rem;
+ font-weight: bold;
+ text-decoration: none;
+
+}
+.wordsForInpartner hr{
+    display: inline-block;
+    border:0;
+    border-top:1px solid var(--defaultGreen);
+    width: 60px;
+    
+   
+}
+.wordsForInpartner h3{
+    color:var(--defaultGreen);
+    text-align: center;
+    padding-bottom: 1rem;
+}
+.teamR{
+    /* height: 50vh; */
+}
+.tr1 {
+    text-align: justify;
+    background-color: var(--commentYellow);
+    height: 50vh;
+}
+.tr2{
+  
+    background-color: var(--commentGreen);
+    height: 50vh;  
+}
+.reviewT1{
+    text-align:center;
+    /* margin-left: 15rem; */
+   padding-top: 8rem;
+   
+}
+.reviewT2{
+    text-align:center;
+    /* margin-left: 15rem; */
+   padding-top: 8rem;
+   
+}
+.reviewT1Name{
+    display: inline-block;
+    text-align: center;
+    /* margin-left: 15rem; */
+    padding-top: 1rem;
+    padding-left: 10rem;
+    color: rgba(41, 115, 115, 1);
+}
+.reviewT2Name{
+    text-align:center;
+    /* margin-left: 15rem; */
+    padding-top: 1rem;
+    padding-left: 10rem;
+    
+    color: rgba(41, 115, 115, 1);
+    
+}
+.quote_right{
+    color:#E9D758;
+    float:right;
+    padding-right: 2rem;
+}
+.quote_right2{
+    color:#3E9494;
+    float: right;
+    padding-right: 2rem;
+}
+
+ /* END TEAM HTML */
+
+
+ /* LEARNING HTML */
+ .heropage3{
+     position:relative;
+     top: 0;
+     left: 0;
+     background-image: url(images/learning.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 80vh;
+     color: var(--defaultWhite);
+     z-index: 1;
+ }
+ .heropage3::after{
+     content: "";
+    position: absolute;
+    top: 0;
+     left: 0;
+     background-color: var(--defaultBlack);
+     opacity: 0.30;
+     
+     
+     width: 100%;
+     height: 100%;
+     z-index: 2;
+ }
+ .heropage3 div{
+     position: relative;
+     top: 0;
+     left: 0;
+     z-index:4;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     padding-right: 2rem;
+     padding-top: 5rem;
+     
+ }
+ .heropage3 div button{
+     margin-top: 1rem;
+     margin-right: 14rem;
+     padding: 10px 20px;
+     background-color: var(--defaultOrange);
+     outline: 0;
+     border: 1px solid var(--defaultOrange);
+     border-radius: 40px;
+ }
+ 
+ .heropage3 div button a{
+     text-decoration: none;
+     color: var(--defaultWhite);
+     font-weight: bold;
+
+ }
+
+
+
+ .inspiration2{
+    display:flex;
+    flex-wrap:wrap;
+    background-color: rgba(63, 61, 61, 1);
+    color: var(--defaultWhite);
+   justify-content: space-between;
+    
+    
+}
+
+.inspiration2 .image img{
+    object-fit:cover;
+     width: 100%;
+    height:100%;
+    
+
+}
+.inspiration2 .quote2{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-self: center;
+margin-right: 5rem;
+
+}
+
+.inspiration2 .quote2 h3{
+  font-weight: 300;
+}
+.inspiration2 .quote2 p{
+  color:
+  var(--orangeColor1);
+  margin-top: 1rem;
+  
+}
+
+
+ 
+
+ .logIn{
+     background-color: var(--defaultBlack);
+     /* height: 100vh; */
+     color: var(--defaultWhite);
+   
+ }
+ .logIn{
+     display: flex;
+     flex-wrap: wrap-reverse;
+     justify-content: space-between;
+ width: 100%;
+ }
+ .loginPicture2 img{
+     object-fit:cover;
+     height: 100%;
+     width: 100%;
+ }
+ label{
+     display: block;
+     /* padding-top: 1rem; */
+
+ }
+ .galeLogin{
+     display: flex;
+     flex-direction:column;
+     flex-wrap: wrap;
+     /* padding-left: 15rem; */
+     padding-top:1rem;
+    
+     align-items:center;
+     justify-content:flex-start;
+    
+    
+ }
+ .galeLogin a{
+     text-decoration: none;
+     padding-top: 1em;
+     color: var(--defaultOrange);
+ }
+.forms {
+    margin-top: 5rem;
+     display: flex;
+    flex-direction: column;
+   align-content: center;
+   justify-content:flex-end;
+   padding-left: 2rem;
+
+}
+.forms .email{
+    margin-bottom: 2rem;
+}
+.forms .password{
+    margin-bottom: 2rem;
+}
+.forms .email{
+    margin-bottom: 2rem;
+}
+
+.forms .similarInput{
+    border-radius: 3px;
+}
+
+ .galeLogin form input{
+ 
+     outline: none;
+     padding: 1rem 10rem;
+ }
+
+ .forms button {
+     padding: 0.5rem 0;
+     border: 1px solid  var(--defaultOrange) ;
+     border-radius: 10px;
+     background-color: var(--defaultOrange);
+     outline: 0;
+     padding-left: 2rem;
+ }
+ .forms button a {
+    color: var(--defaultWhite);
+    text-decoration: none;
+    font-weight:bold;
+   margin-right: 3rem;
+   
+ }
+
+ .galeLogin svg{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .galeLogin .newAccount{
+     padding:0.5rem 10rem ;
+     margin-top:5rem ;
+     margin-bottom: 1rem;
+     border: 1px solid  var(--defaultGrey);
+     border-radius: 10px;
+     background-color: var(--defaultGrey);
+     outline: 0;
+     color: var(--defaultWhite);
+ }
+ .galeLogin .newAccount a{
+    color: var(--defaultWhite);
+    font-weight: bold;
+ }
+ .galeLogin hr{
+     margin-top: 3rem;
+     border: 0;
+     border-top:1px solid var(--commentGreen);
+     /* padding: 0 10rem; */
+     width: 90%;
+     padding-left: 1rem;
+ }
+
+ 
+
+ /* ENDING OF LEARNING HTML */
+
+
+ /* BEGINNING OF ELIBRARY */
+ .heropage3{
+    position:relative;
+    top: 0;
+    left: 0;
+    background-image: url(images/learning.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    color: var(--defaultWhite);
+    z-index: 1;
+}
+.heropage3::after{
+    content: "";
+   position: absolute;
+   top: 0;
+    left: 0;
+    background-color: var(--defaultBlack);
+    opacity: 0.30;
+    
+    
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.heropage3 div{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index:4;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 2rem;
+    padding-top: 5rem;
+    
+}
+.heropage3 div button{
+    margin-top: 1rem;
+    margin-right: 14rem;
+    padding: 10px 20px;
+    background-color: var(--defaultOrange);
+    outline: 0;
+    border: 1px solid var(--defaultOrange);
+    border-radius: 40px;
+}
+
+.heropage3 div button a{
+    text-decoration: none;
+    color: var(--defaultWhite);
+    font-weight: bold;
+
+}
+.signupGoogle h4{
+    margin-top: 1rem;
+    background-color:  rgba(25, 118, 210, 1);
+    border: 1px solid rgba(25, 118, 210, 1);
+    border-radius: 10px;
+    outline: 0;
+    text-align: none;
+    margin-bottom: 1rem;
+
+}
+.signupGoogle h4 a{
+    color: var(--defaultWhite);
+   margin-left: 0.3rem;
+}
+.signupGoogle h4 a:hover{
+    color: var(--orangeColor1);
+}
+.logIn2{
+    background-color: var(--defaultBlack);
+    /* height: 100vh; */
+    color: var(--defaultWhite);
+  
+}
+.logIn2{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+width: 100%;
+}
+.loginPicture img{
+    object-fit:cover;
+    height: 100%;
+    width: 100%;
+}
+label{
+    display: block;
+    /* padding-top: 1rem; */
+
+}
+.galeLogin2{
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    /* padding-left: 15rem; */
+    padding-top:1rem;
+   
+    align-items:center;
+    justify-content:flex-start;
+   
+   
+}
+.galeLogin2 a{
+    text-decoration: none;
+    padding-top: 1em;
+    color: var(--defaultOrange);
+}
+.forms {
+   margin-top: 5rem;
+    display: flex;
+   flex-direction: column;
+  align-content: center;
+  justify-content:flex-end;
+  padding-left: 2rem;
+
+}
+.forms .email{
+   margin-bottom: 2rem;
+}
+.forms .password{
+   margin-bottom: 2rem;
+}
+.forms .email{
+   margin-bottom: 2rem;
+}
+
+.forms .similarInput{
+   border-radius: 3px;
+}
+
+.galeLogin2 form input{
+
+    outline: none;
+    padding: 1rem 10rem;
+}
+
+.forms button {
+    padding: 0.5rem 0;
+    border: 1px solid  var(--defaultOrange) ;
+    border-radius: 10px;
+    background-color: var(--defaultOrange);
+    outline: 0;
+    padding-left: 2rem;
+}
+.forms button a {
+   color: var(--defaultWhite);
+   text-decoration: none;
+   font-weight:bold;
+  margin-right: 3rem;
+  
+}
+
+.galeLogin2 svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeLogin2 .newAccount {
+   color: var(--defaultWhite);
+ 
+}
+.galeLogin2 .newAccount span{
+color: rgba(25, 118, 210, 1) ;
+}
+.galeLogin2 hr{
+    margin-top: 3rem;
+    border:0;
+    border-top: 1px solid  rgba(25, 118, 210, 1);
+    /* padding: 0 10rem; */
+    width: 90%;
+    padding-left: 1rem;
+}
+
+
+ /* ENDING OF ELIBRARY */
+/* BEGINNING OF DONATE.HTML  */
+.herodonatepage{
+    background-image:url(images/donate.jpg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    text-align: center;
+    color: white;
+    padding-top: 35rem;
+}
+.donatecategories{
+    background:var(--defaultBlack);
+    text-align: center;
+    color: var(--defaultWhite);
+    height: 70vh;
+    padding-top: 3rem;
+}
+.donatecategories p{
+    padding-top: 3rem;
+    
+}
+.donatecategories button{
+    margin-top:10rem;
+    padding: 12px 30px;
+    border:0;
+    border-radius: 40px;
+    
+    
+}
+.donatecategories button:hover{
+  background-color: var(--commentGreen);
+    
+    
+}
+.donatecategories button a{
+ font-size:1rem;
+ color:var(--defaultWhite);
+ text-decoration: none;
+    
+}
+ .tutorb {
+ 
+    background-color:#FB763F ;
+    margin-right: 1rem;
+}
+.fieldb{
+    background-color: #E9D758;
+}
+
+.donate_finance{
+    position: relative;
+    height: 70vh;
+    background-color: #127575;
+    text-align: center;
+    color: var(--defaultWhite);
+    padding-top: 3rem;
+}
+
+
+.donate_finance p{
+    padding-top: 3rem;
+    
+}
+.donate_finance button{
+    margin-top:10rem;
+    padding: 12px 40px;
+    border:0;
+    border-radius: 40px;
+    background-color:#FB763F ;
+    
+    
+}
+.donate_finance button:hover{
+  background-color: var(--commentGreen);
+    
+    
+}
+.donate_finance button a{
+ font-size:2rem;
+ color:var(--defaultWhite);
+ text-decoration: none;
+    
+}
+
+
+.moneyeffects1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    color:#d9fff5 ;
+    opacity: 0.5;
+    left:5px;
+    bottom:20rem;
+    animation-name: effects;
+    animation-duration: 15s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse ;
+   
+}
+.moneyeffects{
+    margin:10px ;
+   
+}
+
+@keyframes effects{
+    from{
+        transform: translate(-5px, 0);
+    }
+    to{
+        transform: translate(1200px, 300px);
+    } 
+    
+    }
+
+/* ENDING OF DONATE.HTML  */
+/* FOOTER */
+.mainfooter{
+    background-color:rgba(57, 57, 58, 1);
+    color: var(--defaultWhite);
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom:5rem;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    overflow: hidden;
+
+
+
+}
+
+
+.footernav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.footernav  li{
+list-style-type: none;
+text-decoration: none;
+padding: 0 20px;
+text-align: center;
+
+}
+
+.footernav li a{
+ 
+    text-decoration: none;
+    color: var(--defaultWhite);
+}
+.footernav li a:hover{
+ color: var(--defaultYellow)
+}
+address a{
+    padding-top: ;
+    text-decoration: none;
+
+    color: var(--defaultWhite);
+}
+address a:hover{
+    color: var(--defaultYellow);
+}
+address {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+.footerFinal div {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+padding-left: 1rem;
+padding-right: 1rem;
+padding-top: 0.5rem;
+}
+.footerFinal div a{
+    color:var(--defaultWhite);
+    padding-left: 10px;
+}
+.footerFinal hr{
+    border: 0;
+    border-top: 1px solid white;
+}
+
+.fa-twitter:hover{
+color:#00acee;
+
+}
+.fa-twitter:target{
+color:#00acee;
+
+}
+.fa-facebook:hover{
+color:#3b5998;
+
+}
+.fa-facebook:target{
+color:#3b5998;
+
+}
+.fa-instagram:hover{
+color:#e1306c;
+
+}
+.fa-instagram:target{
+color:#e1306c;
+
+}
+/* FOOTER END */
+
+/* mobile */
+@media screen and (max-width: 768px) {
+    .menuOptions li{
+        
+    
+    }
+    .gNavigation {
+       display: block;
+        /* justify-content: space-between; */
+        padding-top: 5px 10px;
+        background-color: var(--defaultWhite);
+    }
+    .galeNav{
+        position: relative;
+    }
+    .menuOptions {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1, 1, 0;
+        align-items:center;
+        /* padding: 198px 10px; */
+        top: 74px;
+        left: 80px;
+        z-index: 50;
+        width: 80%;
+        background-color:var(--defaultGreen);
+        text-align: center;
+        overflow: hidden!important;
+        height: 80vh;
+        transform:translateX(700px);
+        overflow:hidden !important;
+        opacity: 0.9;
+       border-radius: 0 0 20px 20px;
+
+       
+
+    }
+    
+    
+    .menuOptions.open {
+        transform: translateX(-10px);
+        transition: 1s ease;
+        color: white!important;
+    }
+    .logo {
+        
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .hpage {
+        color: var(--defaultWhite);
+        text-align: center;
+    }
+    .donation {
+       display:none;
+       
+    }
+    
+    .mission .ourMission{
+        display: none;
+    }
+    .mission .child  h1{
+        font-size: 2rem;
+        padding-left: 4rem;
+        text-align: center!important;
+    }
+    .subscribe input[type="email"] {
+        /* padding: 20px 200px; */
+        padding: 1rem 5rem;
+        /* margin-left: 30px; */
+        
+    }
+    
+
+.subscribe button {
+    display: block;
+    font-size: 0.7rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left:100px;
+} 
+.report2 p {
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.herodonatepage {
+    padding-top: 30rem;
+}
+.donatecategories h2{
+    font-size: 1.5rem;
+}
+.donate_finance h2{
+    font-size: 1.5rem;
+}
+.donate_finance button {
+    margin-top: 5rem;
+    padding: 6px 40px;
+   
+}
+
+
+  @keyframes effects{
+    from{
+        transform: translate(-10px, -10px);
+    }
+    to{
+        transform: translate(350px, 200px);
+    } 
+    
+    }
+
+    label {
+        font-size: 1rem;
+        /* padding-top: 1rem; */
+    }
+    .galeLogin2 form input {
+        outline: none;
+        padding: 1rem 10rem;
+        width: 20px;
+    }
+
+    .inspiration2 .quote2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        margin-right: 5rem;
+        height: 40vh;
+        padding-left: 1rem;
+    }
+
+    .heropage3 div {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 2rem;
+        padding-top: 5rem;
+        text-align: center;
+    }
+    .heropage3 div button {
+        margin-top: 1rem;
+        margin-right: 7rem;
+        padding: 10px 20px;
+        border-radius: 40px;
+    }
+    .forms .similarInput {
+        
+        width: 20px;
+    }
+
+    .galeLogin .newAccount {
+        padding: 0.5rem 7rem;
+    }
+
+    .wordsForInpartner h3 {
+        
+        font-size: 1.5rem;
+    }
+    .wordsForInpartner hr {
+        
+        width: 2rem;
+    }
+
+    causesCategories div button {
+      
+        margin-top:2rem;
+       
+}
+}
+@media screen and (min-width:800px){
+    .hamburger{
+        display: none!important;
+    }
+}
